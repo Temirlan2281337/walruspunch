@@ -1,10 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func StrLen(s string) int {
 	count := 0
-	// Цикл работает, пока i меньше длины строки
 	for i := 0; i < len(s); i++ {
 		count++
 	}
