@@ -3,9 +3,11 @@ package main
 import "fmt"
 
 func BasicAtoi(s string) int {
-	runes := []rune(s)
-	for i := 0; i < len(runes); i++ {
+	res := 0
+	for i := 0; i < len(s); i++ {
+		res = res*10 + int(s[i]-'0')
 	}
+	return res
 }
 
 func main() {
