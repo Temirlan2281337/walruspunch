@@ -3,15 +3,12 @@ package main
 import "fmt"
 
 func FirstRune(s string) rune {
-	res:=  rune(s[i])
-for i:=0 ; i < len(s); i++{
-	res = res + (rune(s[0]))
+	runes := []rune(s)
+	return runes[0]
 }
-return res
-}
+
 func main() {
-	fmt.Print(FirstRune("Hello!"))
-	fmt.Print(FirstRune("Salut!"))
-	fmt.Print(FirstRune("Ola!"))
-	
+	fmt.Printf("%c", FirstRune("Hello!"))
+	fmt.Printf("%c", FirstRune("Salut!"))
+	fmt.Printf("%c", FirstRune("Ola!"))
 }
