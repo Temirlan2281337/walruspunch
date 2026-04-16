@@ -1,3 +1,3 @@
-module github.com/01-edu/z01
+module altohagay
 
 go 1.24.6
